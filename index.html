@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,13 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="cabecalho">
         <div class="container">
@@ -20,28 +25,28 @@
             <ul class="lista-menu">
                 <li class="lista-menu-titulo">Categorias</li>
                 <li class="lista-item">
-                     <a href="#" class="lista-menu-link">Programação</a>
+                    <a href="#" class="lista-menu-link">Programação</a>
                 </li>
                 <li class="lista-item">
                     <a href="#" class="lista-menu-link">Front-End</a>
-               </li>
-               <li class="lista-item">
-                <a href="#" class="lista-menu-link">Infraestrutura</a>
-           </li>
-           <li class="lista-item">
-            <a href="#" class="lista-menu-link">Business</a>
-       </li>
-       <li class="lista-item">
-        <a href="#" class="lista-menu-link">Design & UX</a>
-   </li>
+                </li>
+                <li class="lista-item">
+                    <a href="#" class="lista-menu-link">Infraestrutura</a>
+                </li>
+                <li class="lista-item">
+                    <a href="#" class="lista-menu-link">Business</a>
+                </li>
+                <li class="lista-item">
+                    <a href="#" class="lista-menu-link">Design & UX</a>
+                </li>
             </ul>
             <img src="imagem/Logo.png" alt="Logo da AluraBooks">
-         </div>
+        </div>
         <div class="container">
             <a href="#"><img src="imagem/Favoritos.png" alt="Meus Favoritos" class="container-imagem"></a>
             <a href="#"><img src="imagem/Sacola.png" alt="Minha Sacola" class="container-imagem"></a>
             <a href="#"><img src="imagem/Perfil.png" alt="Meu Perfil" class="container-imagem"></a>
-         </div>
+        </div>
     </header>
     <section class="banner">
         <h2 class="banner-titulo"> Já sabe por onde começar?</h2>
@@ -50,6 +55,36 @@
     </section>
     <section class="carrossel">
         <h2 class="carrossel-titulo">Novos lançamentos</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="imagem/ApacheKafka.png" alt="Livro sobre Apache Kafka do AluraBooks"</div>
+                <div class="swiper-slide"><img src="imagem/Javascript.png" alt="Livro sobre Javascript do AluraBooks"</div>
+                <div class="swiper-slide"><img src="imagem/Acessibilidade.png" alt="Livro sobre Acessibilidade do AluraBooks"</div>
+                <div class="swiper-slide"><img src="imagem/Angular.png" alt="Livro sobre Angular do AluraBooks"</div>
+                <div class="swiper-slide"><img src="imagem/Construct2.png" alt="Livro sobre Construct2 do AluraBooks"</div>
+                <div class="swiper-slide"><img src="imagem/Gestão.png" alt="Livro sobre Gestão do AluraBooks"</div>
+                <div class="swiper-slide"><img src="imagem/Gestão2.png" alt="Livro sobre Gestão 2 do AluraBooks"</div>
+                <div class="swiper-slide"><img src="imagem/Guia Front-end.png" alt="Livro sobre Front-End do AluraBooks"</div>
+                <div class="swiper-slide"><img src="imagem/Liderança.png" alt="Livro sobre Liderança do AluraBooks"</div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+    const swiper = new Swiper('.swiper', {
+        speed: 400,
+        spaceBetween: 100,
+      });</script>
 </body>
+
 </html>
