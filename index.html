@@ -56,35 +56,40 @@
     <section class="carrossel">
         <h2 class="carrossel-titulo">Novos lançamentos</h2>
         <div class="swiper">
+            <div class="swiper-pagination"></div>
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide"><img src="imagem/ApacheKafka.png" alt="Livro sobre Apache Kafka do AluraBooks"</div>
-                <div class="swiper-slide"><img src="imagem/Javascript.png" alt="Livro sobre Javascript do AluraBooks"</div>
-                <div class="swiper-slide"><img src="imagem/Acessibilidade.png" alt="Livro sobre Acessibilidade do AluraBooks"</div>
-                <div class="swiper-slide"><img src="imagem/Angular.png" alt="Livro sobre Angular do AluraBooks"</div>
-                <div class="swiper-slide"><img src="imagem/Construct2.png" alt="Livro sobre Construct2 do AluraBooks"</div>
-                <div class="swiper-slide"><img src="imagem/Gestão.png" alt="Livro sobre Gestão do AluraBooks"</div>
-                <div class="swiper-slide"><img src="imagem/Gestão2.png" alt="Livro sobre Gestão 2 do AluraBooks"</div>
-                <div class="swiper-slide"><img src="imagem/Guia Front-end.png" alt="Livro sobre Front-End do AluraBooks"</div>
-                <div class="swiper-slide"><img src="imagem/Liderança.png" alt="Livro sobre Liderança do AluraBooks"</div>
+                <div class="swiper-slide"><img src="imagem/ApacheKafka.png"
+                        alt="Livro sobre Apache Kafka do AluraBooks"></div>
+                <div class="swiper-slide"><img src="imagem/Javascript.png" alt="Livro sobre Javascript do AluraBooks">
+                </div>
+                <div class="swiper-slide"><img src="imagem/Acessibilidade.png"
+                        alt="Livro sobre Acessibilidade do AluraBooks"></div>
+                <div class="swiper-slide"><img src="imagem/Angular.png" alt="Livro sobre Angular do AluraBooks"></div>
+                <div class="swiper-slide"><img src="imagem/Construct2.png" alt="Livro sobre Construct2 do AluraBooks">
+                </div>
+                <div class="swiper-slide"><img src="imagem/Gestão.png" alt="Livro sobre Gestão do AluraBooks"></div>
+                <div class="swiper-slide"><img src="imagem/Gestão2.png" alt="Livro sobre Gestão 2 do AluraBooks"></div>
+                <div class="swiper-slide"><img src="imagem/Guia Front-end.png"
+                        alt="Livro sobre Front-End do AluraBooks"></div>
+                <div class="swiper-slide"><img src="imagem/Liderança.png" alt="Livro sobre Liderança do AluraBooks">
+                </div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
+    
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-    const swiper = new Swiper('.swiper', {
-        speed: 400,
-        spaceBetween: 100,
-      });</script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 5,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });</script>
 </body>
 
 </html>
